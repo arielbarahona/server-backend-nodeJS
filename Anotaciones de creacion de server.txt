@@ -1,0 +1,36 @@
+mongodb+srv://mean_user:mGjROrUYOQomqkyu@cluster0.gswsm.mongodb.net/hospitaldb
+
+Comandos para crear backend server
+
+1. creamos la carpeta
+2. ejecutamos el comando: npm init -y
+3. instalamos expressjs: npm install express --save
+4. creamos el index.js en la raiz de la carpeta
+5. instalamos nodemon : npm install -g nodemon 
+6. modoficar el package.json : 
+
+    "scripts": {
+        "start:dev": "nodemon index.js"
+    }
+
+7. corremos el ser con: npm run start:dev
+8. creacion de rutas en index.js
+    //Rutas
+    app.get('/', (req, res) =>{
+
+         res.json({
+             ok: true,
+             msg: 'Hola mundo'
+         });
+    });
+9.abrir postman "Crear Coleccion", creamos un archivo ya sea GET, PUT, UPDATE, DELETE
+10.configuramos mongo ATLAS
+11.creamos base de datos, y las credenciales , configuramos el network access IP
+12. Conexion de mongo con Atlas:
+        se utiliza mongoose: npm i mongoose
+13. creamos un directorio en el proyecto "database" con el archivo "config.js" 
+14. instalar el paquete para creacion de variables de entorno: npm i dotenv
+15.instalamos las cors : npm i cors
+
+
+
